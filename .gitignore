@@ -1,0 +1,8 @@
+.tmp/
+.DS_Store
+node_modules/
+.next/
+.vercel/
+.impeccable/config.local.json
+.impeccable/review/
+.impeccable/questions/
