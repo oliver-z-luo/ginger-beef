@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ginger Beef House · Campbell River</title>
+<meta name="description" content="Chinese food and a $25 dinner smorgasbord on Island Hwy, Campbell River. Full menu with prices. Call (250) 850-0729.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h3l1.5 4-2 1.3a11 11 0 0 0 6.1 6.1l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+</svg>
+
+<a class="skip" href="#menu">Skip to the menu</a>
+
+<div class="navbg" aria-hidden="true"></div>
+<header class="nav" id="top">
+  <a class="brand" href="#top" aria-label="Ginger Beef House, back to top">Ginger Beef<br>House</a>
+  <nav class="nav__bar" aria-label="Main">
+    <a href="#menu">Menu</a>
+    <a href="#smorgasbord">Smorgasbord</a>
+    <a href="#new">New</a>
+    <a href="#dinners">Family Dinners</a>
+    <a href="#visit">Visit</a>
+    <button class="nav__bag" type="button" data-open-cart aria-label="Your order, 0 items"><svg><use href="#i-bag"/></svg><span class="nav__count" data-count>0</span></button>
+    <a class="btn btn--red" href="tel:+12508500729"><svg><use href="#i-phone"/></svg><span>Call to order</span></a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="hero-h">
+  <img class="hero__img" src="../img/smorgasbord.jpg" alt="A buffet counter lined with trays of Chinese dishes (stand-in photo)" width="900" height="600">
+  <div class="hero__in">
+    <h1 id="hero-h">All-you-can-eat dinner, <span>$25 a person</span></h1>
+    <p class="hero__meta"><span class="status" data-status><i></i><span>Checking hours…</span></span> <span>Smorgasbord Wednesday to Monday, <span class="nowrap">4:00–8:30pm</span> · 1891 Island Hwy</span></p>
+    <div class="hero__ctas">
+      <a class="btn btn--red btn--lg" href="#menu">Order from the menu <svg><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--white btn--lg" href="tel:+12508500729"><svg><use href="#i-phone"/></svg>(250) 850-0729</a>
+    </div>
+  </div>
+  <span class="hero__credit">Stand-in photo</span>
+</section>
+
+<section class="wrap feat" aria-labelledby="fav-h">
+  <div class="sec-head">
+    <h2 id="fav-h">Favourites</h2>
+    <a class="btn btn--ghost" href="#menu">Full menu <svg><use href="#i-arrow"/></svg></a>
+  </div>
+  <div class="rail" id="favs"></div>
+</section>
+
+<div class="band" aria-hidden="true"><div class="band__track"><span>Ginger fried beef</span><span>Family dinners for 2 to 12</span><span>Smorgasbord six nights a week</span><span>Call us for your order</span><span>Ginger fried beef</span><span>Family dinners for 2 to 12</span><span>Smorgasbord six nights a week</span><span>Call us for your order</span></div></div>
+
+<section class="split split--dark" id="new" aria-labelledby="new-h">
+  <div class="split__media" id="new-media"></div>
+  <div class="split__txt">
+    <h2 id="new-h">New on the menu</h2>
+    <p class="lede">Three new dishes from the kitchen. Hover or tap one to see it.</p>
+    <ul class="newlist" id="news"></ul>
+    <p class="fine">Demo placeholders, for the owner to replace with real new dishes.</p>
+  </div>
+</section>
+
+<section class="split split--red" id="smorgasbord" aria-labelledby="smorg-h">
+  <div class="split__txt">
+    <h2 id="smorg-h">The smorgasbord</h2>
+    <p class="price-big">$25<small>per person</small></p>
+    <ul class="hours">
+      <li><span>Wednesday to Monday</span><b>4:00–8:30pm</b></li>
+      <li><span>Tuesday</span><b>Closed</b></li>
+    </ul>
+    <p>Six nights a week, the whole spread is out from 4 o’clock. Come hungry.</p>
+    <a class="btn btn--white" href="tel:+12508500729"><svg><use href="#i-phone"/></svg>Call ahead · (250) 850-0729</a>
+  </div>
+  <div class="split__media"><img src="../img/smorgasbord.jpg" alt="Buffet trays (stand-in photo)" loading="lazy" width="900" height="600"></div>
+</section>
+
+<section class="menu" id="menu" aria-labelledby="menu-h">
+  <div class="wrap">
+    <div class="sec-head sec-head--stack">
+      <h2 id="menu-h">The menu</h2>
+      <p>Numbers 1 to 110, the same as the printed menu. Prices are before GST.</p>
+    </div>
+  </div>
+  <div class="catbar" id="catbar">
+    <div class="wrap catbar__in">
+      <nav class="catbar__links" id="catlinks" aria-label="Menu categories"></nav>
+      <form class="finder" id="finder" role="search">
+        <label for="find-no">Go to No.</label>
+        <input id="find-no" inputmode="numeric" pattern="[0-9]*" maxlength="3" placeholder="43" autocomplete="off">
+        <span class="finder__msg" id="find-msg" role="status"></span>
+      </form>
+    </div>
+  </div>
+  <div class="wrap" id="cats"></div>
+
+  <div class="wrap">
+    <section class="combo" id="combo" aria-labelledby="combo-h">
+      <div class="combo__head">
+        <h3 id="combo-h">Combo for one</h3>
+        <p>Chow mein or fried rice, plus one item for <b>$15.95</b> or two for <b>$19.95</b>.</p>
+      </div>
+      <div class="combo__body">
+        <fieldset class="seg"><legend>Base</legend>
+          <label><input type="radio" name="combo-base" value="Chow mein" checked><span>Chow mein</span></label>
+          <label><input type="radio" name="combo-base" value="Fried rice"><span>Fried rice</span></label>
+        </fieldset>
+        <fieldset class="picks"><legend>Pick up to two</legend><div id="picks"></div></fieldset>
+        <div class="combo__foot"><span id="combo-out" aria-live="polite">Pick at least one item</span><button class="btn btn--red" type="button" id="combo-add" disabled><svg><use href="#i-plus"/></svg>Add combo</button></div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section class="dinners" id="dinners" aria-labelledby="din-h">
+  <div class="wrap">
+    <div class="sec-head sec-head--stack">
+      <h2 id="din-h">Family dinners</h2>
+      <p>Set dinners for 2 to 12 people. Family dinners aren’t included in the pickup discount.</p>
+    </div>
+    <div class="dgrid" id="dinner-list"></div>
+  </div>
+</section>
+
+<section class="wrap visit" id="visit" aria-labelledby="visit-h">
+  <div>
+    <h2 id="visit-h">Visit or call</h2>
+    <ul class="facts">
+      <li><svg><use href="#i-pin"/></svg><div><b>1891 Island Hwy</b><br>Campbell River, BC V9W 2E9<br><a href="https://maps.google.com/?q=1891+Island+Hwy+Campbell+River+BC">Get directions</a></div></li>
+      <li><svg><use href="#i-clock"/></svg><div><b>Wednesday to Monday, 4:00–8:30pm</b><br>Closed Tuesdays</div></li>
+      <li><svg><use href="#i-phone"/></svg><div><b><a href="tel:+12508500729">(250) 850-0729</a></b><br>Call us for your order, takeout or delivery</div></li>
+    </ul>
+  </div>
+  <div class="visit__notes">
+    <h3>Good to know</h3>
+    <p><b>5% off pickup</b> on orders over $45 before tax, paid by cash or debit. Group and family dinners are excluded.</p>
+    <p><b>Allergies?</b> Please let us know when you order. Items marked “Peanut” contain peanuts.</p>
+    <p>Prices are before GST and may change without notice.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <span class="brand brand--foot">Ginger Beef House</span>
+    <p>Demo website. Photos are stand-ins and the new dishes are placeholders.</p>
+  </div>
+</footer>
+
+<button class="pill" type="button" data-open-cart hidden><svg><use href="#i-bag"/></svg><span>View order</span><b data-count>0</b><span data-total>$0.00</span></button>
+
+<dialog class="drawer" id="drawer" aria-labelledby="drawer-h">
+  <div class="drawer__in">
+    <header class="drawer__head">
+      <h2 id="drawer-h">Your order</h2>
+      <button class="iconbtn" type="button" data-close-cart aria-label="Close"><svg><use href="#i-x"/></svg></button>
+    </header>
+    <div class="drawer__body" id="lines"></div>
+    <footer class="drawer__foot">
+      <dl class="totals">
+        <div><dt>Subtotal</dt><dd id="t-sub">$0.00</dd></div>
+        <div><dt>GST (5%)</dt><dd id="t-gst">$0.00</dd></div>
+        <div class="totals__grand"><dt>Total</dt><dd id="t-total">$0.00</dd></div>
+      </dl>
+      <p class="drawer__disc" id="t-disc"></p>
+      <a class="btn btn--red btn--lg btn--block" href="tel:+12508500729"><svg><use href="#i-phone"/></svg>Call (250) 850-0729 to order</a>
+      <button class="linkbtn" type="button" id="clear">Clear order</button>
+      <p class="fine">This demo doesn’t take payment. Read your order out when you call.</p>
+    </footer>
+  </div>
+</dialog>
+
+<div class="sr-only" aria-live="polite" id="announce"></div>
+
+<script src="../shared/menu.js"></script>
+<script src="../shared/core.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

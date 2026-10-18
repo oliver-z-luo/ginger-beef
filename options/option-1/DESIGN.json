@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T00:00:00Z",
+  "title": "Design System: Ginger Beef House · Storefront",
+  "extensions": {
+    "colorMeta": {
+      "red": { "role": "primary", "displayName": "Storefront Red", "canonical": "#D42A24", "tonalRamp": ["#FBE9E8", "#D42A24", "#B21F1A"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#111111", "tonalRamp": ["#5E5E5E", "#2B2B2B", "#111111"] },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#FFFFFF", "tonalRamp": ["#FFFFFF", "#F4F3F1", "#E6E4E0"] },
+      "night": { "role": "neutral", "displayName": "Night", "canonical": "#0E0E0E", "tonalRamp": ["#0E0E0E", "#1B1B1B", "#B9B9B6", "#F5F5F4"] },
+      "open-green": { "role": "functional", "displayName": "Open Green", "canonical": "#1E9E55" },
+      "tag-bg": { "role": "functional", "displayName": "Peanut Tag", "canonical": "#FFF3D6" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero h1 only, uppercase, price phrase on a red block." },
+      "price-display": { "displayName": "Price Display", "purpose": "The $25 smorgasbord price." },
+      "headline": { "displayName": "Headline", "purpose": "Uppercase section titles." },
+      "title": { "displayName": "Title", "purpose": "Category, combo, dinner card and notes titles (24-34px)." },
+      "band": { "displayName": "Band", "purpose": "Marquee text." },
+      "body": { "displayName": "Body", "purpose": "All reading text, Archivo." },
+      "label": { "displayName": "Label", "purpose": "Legends, finder label, category ranges." }
+    },
+    "shadows": [
+      { "name": "nav-bar", "value": "0 6px 24px rgba(0,0,0,.12)", "purpose": "Floating nav bar over the hero." },
+      { "name": "nav-brand", "value": "0 4px 18px rgba(0,0,0,.16)", "purpose": "Brand disc over the hero." },
+      { "name": "nav-scrolled", "value": "0 2px 10px rgba(0,0,0,.08)", "purpose": "Nav bar and brand once the white band is in." },
+      { "name": "band-edge", "value": "0 1px 0 #E6E4E0", "purpose": "Hairline under the white nav band." },
+      { "name": "photo-control", "value": "0 2px 8px rgba(0,0,0,.18)", "purpose": "Add control on a photo." },
+      { "name": "order-pill", "value": "0 10px 30px rgba(0,0,0,.28)", "purpose": "Floating order pill." },
+      { "name": "drawer", "value": "-10px 0 40px rgba(0,0,0,.2)", "purpose": "Order drawer; backdrop rgba(0,0,0,.45)." },
+      { "name": "focus", "value": "outline: 3px solid #D42A24; outline-offset: 3px", "purpose": "Global focus-visible ring." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "The only easing curve." },
+      { "name": "state", "value": "200ms", "purpose": "Colour and border transitions." },
+      { "name": "add-bump", "value": "scale(1.15) 250ms", "purpose": "Add control on each add." },
+      { "name": "count-in", "value": "scale(0→1) 300ms", "purpose": "Nav count badge appears." },
+      { "name": "nav-band", "value": "translateY(-100%→0) 350ms", "purpose": "White band behind nav after hero." },
+      { "name": "pill-bump", "value": "scale(1.06) 350ms", "purpose": "Order pill on each add." },
+      { "name": "drawer-in", "value": "translateX(100%→0) 450ms", "purpose": "Drawer open." },
+      { "name": "line-enter", "value": "opacity 0, translateY(-6px) 500ms", "purpose": "New drawer line." },
+      { "name": "photo-zoom", "value": "scale(1.04) 600ms", "purpose": "Favourite photo hover." },
+      { "name": "clip-wipe", "value": "clip-path inset(0 0 0 100%) 700ms", "purpose": "New-dish photo swap." },
+      { "name": "row-flash", "value": "#FBE9E8 → transparent 1.6s", "purpose": "Row reached via finder." },
+      { "name": "marquee", "value": "translateX(-50%) 36s linear infinite", "purpose": "Red band; stopped under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "nav-compact", "value": "1020px" },
+      { "name": "stack", "value": "860px" },
+      { "name": "phone", "value": "560px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Add / Quantity Control",
+      "kind": "button",
+      "refersTo": "add-control",
+      "description": "Plus that turns red and shows the quantity once in the order.",
+      "html": "<button class=\"ds-add\">+</button> <button class=\"ds-add ds-add--in\">2</button>",
+      "css": ".ds-add{display:inline-grid;place-items:center;min-width:40px;height:40px;padding:0 10px;border-radius:8px;border:1px solid #E6E4E0;background:#fff;color:#111;font:700 15px Archivo,system-ui,sans-serif;font-variant-numeric:tabular-nums;cursor:pointer;transition:background .2s,border-color .2s,transform .25s cubic-bezier(.16,1,.3,1)}.ds-add:hover{border-color:#111}.ds-add--in{background:#D42A24;border-color:#D42A24;color:#fff}"
+    },
+    {
+      "name": "Red Button",
+      "kind": "button",
+      "refersTo": "button-red",
+      "description": "Call and primary actions.",
+      "html": "<a class=\"ds-btn\">Call to order</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border-radius:8px;border:1px solid #D42A24;background:#D42A24;color:#fff;font:600 15px/1 Archivo,system-ui,sans-serif;text-decoration:none}.ds-btn:hover{background:#B21F1A;border-color:#B21F1A}"
+    },
+    {
+      "name": "Category Chip",
+      "kind": "chip",
+      "refersTo": "category-link",
+      "description": "Sticky category bar link; Ink fill when active.",
+      "html": "<a class=\"ds-chip\">Soup</a><a class=\"ds-chip ds-chip--on\">Chow Mein</a>",
+      "css": ".ds-chip{display:inline-block;padding:9px 13px;border-radius:999px;font:500 14px Archivo,system-ui,sans-serif;color:#2B2B2B;text-decoration:none}.ds-chip:hover{background:#F4F3F1}.ds-chip--on{background:#111;color:#fff}"
+    },
+    {
+      "name": "Marquee Band",
+      "kind": "custom",
+      "refersTo": "marquee-band",
+      "description": "Full-bleed red uppercase ticker.",
+      "html": "<div class=\"ds-band\">Ginger fried beef &bull; Family dinners for 2 to 12</div>",
+      "css": ".ds-band{background:#D42A24;color:#fff;padding:15px 22px;font:400 24px/1 Anton,'Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.01em;white-space:nowrap;overflow:hidden}"
+    },
+    {
+      "name": "Order Pill",
+      "kind": "custom",
+      "refersTo": "order-pill",
+      "description": "Floating bottom-right summary that opens the drawer.",
+      "html": "<button class=\"ds-pill\">View order <b>3</b> $42.85</button>",
+      "css": ".ds-pill{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:10px 18px;border:0;border-radius:999px;background:#111;color:#fff;font:600 15px Archivo,system-ui,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.28)}.ds-pill b{background:#D42A24;border-radius:999px;padding:2px 9px;font-size:13px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Storefront Window",
+    "overview": "A white page with black and red feature blocks, Anton uppercase headlines over Archivo body text, a full-bleed photo hero with a floating white nav, a red marquee, 50/50 photo and text splits, and a numbered menu that behaves like an ordering app with the phone as checkout.",
+    "keyCharacteristics": ["White page; black and red only as blocks or order state", "Anton uppercase display, Archivo for reading", "Photos 14px, controls 8px, tokens round", "Red menu number on every dish", "Tabular prices before GST"],
+    "rules": [
+      { "name": "The Blocks Not Sprinkles Rule", "body": "Red and black appear as whole surfaces or as order state, never as scattered tint.", "section": "colors" },
+      { "name": "The Red Means Act Rule", "body": "On white, a red control is a call to action or something already in the order.", "section": "colors" },
+      { "name": "The Two Voices Rule", "body": "Anton is uppercase and only for headlines, titles, display prices, the band and the brand.", "section": "typography" },
+      { "name": "The Tabular Rule", "body": "Every price, quantity and total uses tabular figures.", "section": "typography" },
+      { "name": "The Only Floaters Cast Shadows Rule", "body": "Only nav, photo controls, order pill and drawer cast shadows.", "section": "elevation" }
+    ],
+    "dos": ["Do keep the page white with black and red as blocks", "Do show the red menu number on every dish", "Do pair red fill, nav count and pill bump on add", "Do use the single ease curve", "Do gate non-essential motion behind prefers-reduced-motion when porting"],
+    "donts": ["Don't set dish names, list prices or controls in Anton", "Don't shadow cards, panels or splits", "Don't use red as decoration on white", "Don't add gradients beyond the hero scrim", "Don't show the white nav band while the hero is in view"]
+  }
+}

@@ -69,6 +69,7 @@ Ginger Beef House is a Western Canadian Chinese takeout institution. It serves g
 
 - **Name:** Ginger Beef House.
 - **Logo:** An existing bonsai-tree mark in a pink oval with a pink wordmark, as on the printed menu. The demo may reference the name and the bonsai motif but has no clean vector of the logo.
+- **Visual register:** Not chosen yet. Three demo directions are live (see `options/README.md`). The owner leans toward familiar, toned-down restaurant-site conventions over a conceptual look.
 - **Voice:** Plain, friendly, local. The printed menu says "Call us for your order" and "Please let us know if you have food allergies."
 
 ## Evidence on Hand
@@ -76,7 +77,7 @@ Ginger Beef House is a Western Canadian Chinese takeout institution. It serves g
 - **Full printed menu:** `docs/source/menu-scan.pdf`. Two pages with every item, number, price, family dinner, combo, address, phone, and hours.
 - **Contact details:** 1891 Island Hwy, Campbell River, BC V9W 2E9. Phone (250) 850-0729.
 - **Reviews:** The current site shows 5 customer reviews. Their text was not captured, so do not quote or invent reviews.
-- **Photos:** None usable. The demo uses stock photos (Unsplash or Pexels) of comparable Chinese-Canadian dishes, which will be replaced with real photos later. Never caption a stock photo as this restaurant's food in a way that implies it's real.
+- **Photos:** None usable. The demo uses Creative Commons stock photos of comparable Chinese-Canadian dishes (credits in `.demo/img/CREDITS.md`), which will be replaced with real photos later. Never caption a stock photo as this restaurant's food in a way that implies it's real.
 - **Not on hand:** Owner names, founding year, story or history, awards, and press. Do not fabricate them.
 
 ## Product Principles

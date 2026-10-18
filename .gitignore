@@ -6,3 +6,4 @@ node_modules/
 .impeccable/config.local.json
 .impeccable/review/
 .impeccable/questions/
+.impeccable/mocks/

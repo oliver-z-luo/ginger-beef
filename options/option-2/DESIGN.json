@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T00:00:00Z",
+  "title": "Design System: Ginger Beef House · Bright Counter",
+  "extensions": {
+    "colorMeta": {
+      "counter-red": { "role": "primary", "displayName": "Counter Red", "canonical": "#C8202A" },
+      "counter-red-deep": { "role": "primary", "displayName": "Counter Red Deep", "canonical": "#A3161F" },
+      "blush": { "role": "secondary", "displayName": "Blush", "canonical": "#FDF0EE" },
+      "blush-deep": { "role": "secondary", "displayName": "Blush Deep", "canonical": "#F9DEDA" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#1D1D1F" },
+      "ink-soft": { "role": "neutral", "displayName": "Ink Soft", "canonical": "#3A3A3D" },
+      "mute": { "role": "neutral", "displayName": "Mute", "canonical": "#66666B" },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#FFFFFF" },
+      "soft": { "role": "neutral", "displayName": "Soft", "canonical": "#F6F5F3" },
+      "line": { "role": "neutral", "displayName": "Line", "canonical": "#ECEBE9" },
+      "open-green": { "role": "status", "displayName": "Open Green", "canonical": "#4ADE80" }
+    },
+    "shadows": [
+      { "name": "card-lift", "value": "0 10px 30px rgba(0,0,0,.08)", "purpose": "Photo card hover, with translateY(-2px)." },
+      { "name": "bagbar-glow", "value": "0 10px 30px rgba(200,32,42,.35)", "purpose": "Floating mobile bag bar." },
+      { "name": "sheet-foot-edge", "value": "0 -8px 20px rgba(0,0,0,.06)", "purpose": "Sticky bag footer in bottom-sheet mode." },
+      { "name": "header-glass", "value": "background rgba(255,255,255,.96); backdrop-filter saturate(1.4) blur(8px)", "purpose": "Sticky header." },
+      { "name": "focus-ring", "value": "outline 3px solid #C8202A; offset 3px", "purpose": "All focus-visible; white inside the red band." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "Single easing for all motion." },
+      { "name": "color", "value": "150-200ms", "purpose": "Background, border, colour changes." },
+      { "name": "bump", "value": "add: scale 1.1 300ms; bag: scale 1.14 at 40%, 450ms", "purpose": "Add feedback." },
+      { "name": "carousel", "value": "crossfade 600ms; photo scale .96 to 1 over 900ms; autoplay 7000ms", "purpose": "Promo carousel; pause on hover/focus; off under reduced motion." },
+      { "name": "sheet", "value": "450ms slide from right (desktop) or bottom (<=860px)", "purpose": "Bag sheet entry." },
+      { "name": "line-enter", "value": "500ms fade + translateY(-6px)", "purpose": "Newly added bag line." }
+    ],
+    "breakpoints": [
+      { "name": "lg", "value": "1080px", "purpose": "Hide header nav; menu grid 3, mini 2, visit 2." },
+      { "name": "md", "value": "860px", "purpose": "Stack hero, combo, smorgasbord; scrolling tab row; bag bar; bottom sheet." },
+      { "name": "sm", "value": "600px", "purpose": "Icon-only call; menu grid 2, mini 1, visit 1; full-width add." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Add Button",
+      "kind": "button",
+      "refersTo": "add-button",
+      "description": "Red pill that turns ink and shows 'n in bag' once the dish is in the bag.",
+      "html": "<button class=\"ds-add\">+ Add</button> <button class=\"ds-add ds-add--in\">+ 2 in bag</button>",
+      "css": ".ds-add{display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 18px;border:0;border-radius:999px;background:#C8202A;color:#fff;font:800 15px Figtree,system-ui,sans-serif;cursor:pointer;transition:background .2s,transform .3s cubic-bezier(.16,1,.3,1)}.ds-add:hover{background:#A3161F}.ds-add--in{background:#1D1D1F}"
+    },
+    {
+      "name": "Menu Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Menu category tab; selected is ink.",
+      "html": "<button class=\"ds-chip\" aria-selected=\"true\">Popular</button> <button class=\"ds-chip\">Beef</button>",
+      "css": ".ds-chip{min-height:44px;padding:0 18px;border-radius:999px;border:2px solid #ECEBE9;background:#fff;color:#1D1D1F;font:700 15px Figtree,system-ui,sans-serif}.ds-chip[aria-selected=true]{background:#1D1D1F;border-color:#1D1D1F;color:#fff}"
+    },
+    {
+      "name": "Mini Card",
+      "kind": "card",
+      "refersTo": "mini-card",
+      "description": "Compact row for dishes without a photo.",
+      "html": "<article class=\"ds-mini\"><span class=\"ds-mini__no\">43</span><div><b>Ginger Fried Beef</b><br><span>$17.95</span></div></article>",
+      "css": ".ds-mini{display:flex;align-items:center;gap:14px;border:1px solid #ECEBE9;border-radius:16px;padding:12px;background:#fff;font:16px Figtree,system-ui,sans-serif;color:#1D1D1F}.ds-mini__no{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:#FDF0EE;color:#C8202A;font:900 18px Figtree,system-ui,sans-serif}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Bright Counter",
+    "rules": [
+      "The One Red Rule: red is the action and the brand.",
+      "The Red-to-Ink Rule: selected and in-bag states are ink.",
+      "The Tabular Price Rule: all prices and quantities use tabular figures.",
+      "The No Second Face Rule: Figtree only.",
+      "The Flat-At-Rest Rule: no resting shadows."
+    ]
+  }
+}
